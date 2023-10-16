@@ -1,14 +1,14 @@
 // /*PART ONE: */
-// let secret = 7;
-// let answer = prompt("Please guess the secret number (1-10): ");
-// let guess = parseInt(answer); //Converting the string 'Guess' to an integer for comparison
+let secret = 7;
+let answer = prompt("Please guess the secret number (1-10): ");
 
-// if (guess === secret) {
-//   alert("CORRECT!");
-// } else {
-//   alert("Sorry, incorrect");
-// }
-
+//Converting the string 'Guess' to an integer for comparison
+let guess = parseInt(answer); 
+if (guess === secret) {
+  alert("CORRECT!");
+} else {
+  alert("Sorry, incorrect");
+}
 
 
 
@@ -18,7 +18,8 @@
 // let answer = prompt("Please guesss a secret number between 1-10 :");
 // let guess = parseInt(answer);
 
-// function getAnswer() { answer; guess;}  //combining lines '17 & 18'
+//combining lines '17 & 18'
+// function getAnswer() { answer, guess}; 
 // getAnswer();
 
 // if (guess === secret) {
@@ -32,19 +33,19 @@
 /* PART 3: USING WHILE LOOP */
 /* DECLARE GLOBAL VARIABLES */
 
-let secretNumber = Math.floor(Math.random() * 61);
-let playersGuess = prompt("Guess a random number between 0-60");
+// let secretNumber = Math.floor(Math.random() * 61);
+// let playersGuess = prompt("Guess a random number between 0-60");
 
-while (playersGuess !== secretNumber) {
-    secretNumber;
-    if (playersGuess === secretNumber) {
-        alert("Correct! Well done! -END OF GAME-");
-        break;
-    } else if (playersGuess < secretNumber) {
-        alert("Incorrect, too low! Try again {^_^}");
-        break;
-    } else {
-        alert("Incorrect, too high! Try again {^_^}");
-        break;
-    }
-}
+// while (playersGuess !== secretNumber) {
+//     secretNumber;
+//     if (playersGuess === secretNumber) {
+//         alert("Correct! Well done! -END OF GAME-");
+//         break;
+//     } else if (playersGuess < secretNumber) {
+//         alert("Incorrect, too low! Try again {^_^}");
+//         break;
+//     } else {
+//         alert("Incorrect, too high! Try again {^_^}");
+//         break;
+//     }
+// }

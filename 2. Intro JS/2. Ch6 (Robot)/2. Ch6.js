@@ -76,17 +76,17 @@
 
 
  /* Practice exercise 6.3     ( DEMO!!! )   */
- const val1 = 2;
- const val2 = 3;
- let operator = "-";
- function calc(x, y, op) {
-     if (op === "-") {
-         console.log(a - b);
-     } else {
-         console.log(a + b);
-     }
- }
- calc(val1, val2, operator);
+//  const val1 = 2;
+//  const val2 = 3;
+//  let operator = "-";
+//  function calc(x, y, op) {
+//      if (op === "-") {
+//          console.log(a - b);
+//      } else {
+//          console.log(a + b);
+//      }
+//  }
+//  calc(val1, val2, operator);
 
 
 
