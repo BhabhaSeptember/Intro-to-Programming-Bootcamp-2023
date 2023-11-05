@@ -1,8 +1,7 @@
 let replaceButton = document.getElementById("replaceButton");
 replaceButton.addEventListener("click", replaceIt); // must now create "replaceIt" function
 
-function replaceIt() {
-  let storyDiv = document.getElementById("story"); // variable "storyDiv" must still be read by program
+let storyDiv = document.getElementById("story"); // variable "storyDiv" must still be read by program
   let adj1 =
     "<span class='replacement'>" +
     document.getElementById("adj1").value +
@@ -63,9 +62,9 @@ function replaceIt() {
     "<span class='replacement'>" +
     document.getElementById("verb").value +
     "</span>";
-}
-
-let theStory = "<h1> Douglas's Dance Party</h1>";
+    
+function replaceIt() {
+  theStory += "<h1> Douglas's Dance Party</h1>";
 theStory += "One " + adj1 + " day,";
 theStory += " Douglas was " + verbIng;
 theStory += " in his " + roomInHouse;
@@ -83,4 +82,8 @@ theStory +=
   " Shake, and took the prize for dancing the best electric " + verb + ".";
 
 storyDiv.innerHTML = theStory;
+  
+}
+
+// let theStory = document.getElementById("story");
 

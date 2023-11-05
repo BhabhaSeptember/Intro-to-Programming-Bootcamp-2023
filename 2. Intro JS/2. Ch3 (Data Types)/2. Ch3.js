@@ -50,11 +50,15 @@
 
 
 /* Combining Input & Ouput */
-// let recipient = prompt("Please enter your full name")
-// let sender = "Post Office";
-// let notice = "Your parcel has been delayed indefinitely due to unforeseen natural events.<br> Please contact our 24hr customer services to make an enquiry.<br> Please accept our deepest apologies for any inconvenience caused.";
+let recipient = prompt("Please enter your full name")
+let sender = "Post Office";
+let notice = "Your parcel has been delayed indefinitely due to unforeseen natural events.<br> Please contact our 24hr customer services to make an enquiry.<br> Please accept our deepest apologies for any inconvenience caused.";
 
-// document.write("Dear " + recipient + "<br><br>");
-// document.write(notice + "<br><br>");
-// document.write("Sincerely <br>");
-// document.write(sender);
+document.write("Dear " + recipient + "<br><br>");
+document.write(notice + "<br><br>");
+document.write("Sincerely <br>");
+document.write(sender);
+
+
+
+

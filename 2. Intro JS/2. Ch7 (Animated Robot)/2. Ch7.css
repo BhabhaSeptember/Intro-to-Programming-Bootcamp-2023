@@ -84,6 +84,7 @@ p {
     left:22%;
 }
 #leftarm {
+    background-color:rgb(93, 215, 236);
     position: absolute;
     left: 70%;
     width: 27%;

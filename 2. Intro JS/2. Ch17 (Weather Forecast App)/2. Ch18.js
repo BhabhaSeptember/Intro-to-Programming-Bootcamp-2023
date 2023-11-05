@@ -39,6 +39,7 @@ let weather = ["Sunny", "Earthquake alert", "Tsunami alert", "Cloudy", "Raining"
 minTemp = -12;
 maxTemp = 150;
 
+generateWeather();
 
 function generateWeather() {
     for  (i = 0; i < days.length; i++) {
@@ -49,5 +50,5 @@ function generateWeather() {
     }
 }
 
-generateWeather();
+
 

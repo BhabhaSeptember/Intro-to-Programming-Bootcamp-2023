@@ -21,13 +21,13 @@ function askQuestion(questionNumber) {
      answers.length = questionNumber;
     switch (questionNumber) {
         case 0:
-            question.innerHTML = "Are you ready to play?";
+            question.innerHTML = "Are you ready to play? (Answer 'Yes' or 'No' below)";
             break;
         case 1:
-            question.innerHTML = "Go to Mars, or stay home?";
+            question.innerHTML = "Answer ('Go to Mars', or 'Stay home')";
             break;
         case 2:
-            question.innerHTML = "Risk it, or go home.";
+            question.innerHTML = "Answer ('Risk it', or 'Go home')";
             break;
         default:
             break;

@@ -51,5 +51,6 @@ document.getElementById("peopleIknow").innerHTML = people.toString();
 
 document.getElementById("peopleIKnow").innerHTML = people.valueOf();
 
+console.log(people);
 
 
