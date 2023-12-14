@@ -18,15 +18,25 @@ let myListArea = document.getElementById("wishList");
 
 // 5. function addTheThing gets the value of the text field and then passes it to a function called addToTheList. It then runs a function called resetInput
 function addTheThing() {
-  let theThing =
-    document.getElementById(
-      "iWant"
-    ); /* Statement stores reference to element NOT get value of input field */
+  let theThing = document.getElementById("iWant"); /* Statement stores reference to element NOT get value of input field */
   addToTheList(theThing); /* function gets value & adds to list */
   resetInput(theThing); /* function resets value of input field to blank */
 }
 
-// 6. Function printView which outputs s nicely formatted view of the list
+
+
+
+
+// 6. Function accepts argument, adds it to array, then adds it to ul in browser window
+function addToTheList(thingToAdd) {
+  myList.push(thingToAdd.value); /* Adds current value of of input field to myList array */
+  let newListItem = document.createElement("li"); /* Creates empty list element stored in a new variable */
+  newListItem.innerHTML = myList[ myList.length - 1]; /* changes innerHTML property of new element to current value of input field */
+  myListArea.appendChild(newListItem);
+}
+
+
+// 7. Function printView which outputs s nicely formatted view of the list
 function printView() {
   let listPage = document.getElementById("listPage");
   let formArea = document.getElementById("formArea");
@@ -39,21 +49,7 @@ function printView() {
   }
 }
 
-// 7. Function accepts argument, adds it to array, then adds it to ul in browser window
-function addToTheList(thingToAdd) {
-  myList.push(
-    thingToAdd.value
-  ); /* Adds current value of of input field to myList array */
-  let newListItem =
-    document.createElement(
-      "li"
-    ); /* Creates empty list element stored in a new variable */
-  newListItem.innerHTML =
-    myList[
-      myList.length - 1
-    ]; /* changes innerHTML property of new element to current value of input field */
-  myListArea.appendChild(newListItem);
-}
+
 
 // 8. function resetInput, which resets the value of the input field to blank ("")
 function resetInput(inputToReset) {

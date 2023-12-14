@@ -46,10 +46,10 @@
 let people = ["Kareem", "Fatma", "Sumaya", "Mr. Hobson", "Ms. Young", "Mrs. O' Doherty"];
 let otherPeople = ["Emilie", "Mommy", "Dad", "Kathy"];
 
-document.getElementById("peopleIknow").innerHTML = people.toString();
+document.getElementById("peopleIKnow").innerHTML = people.toString();
 
 
-document.getElementById("peopleIKnow").innerHTML = people.valueOf();
+document.getElementById("peopleIKnow").innerHTML = otherPeople.valueOf();
 
 console.log(people);
 
