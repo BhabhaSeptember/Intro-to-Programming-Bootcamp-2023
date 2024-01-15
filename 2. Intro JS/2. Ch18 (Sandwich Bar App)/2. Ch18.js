@@ -74,7 +74,7 @@ and start loop over
   }
 
 
-  document.getElementById("receipt").innerHTML += "<p>You were able to buy " + lunches + "this week.</p>";
+  document.getElementById("receipt").innerHTML += "<p>You were able to buy " + lunches + " lunches this week.</p>";
 }
 
 /*
